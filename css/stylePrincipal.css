@@ -1,0 +1,63 @@
+
+  *{
+    margin: 10px;
+    padding: 0;
+  }
+  header{
+    font-family: Helvetica;
+    width: 480px;
+    margin: 0 auto;
+  }
+  ul{
+    list-style: none;
+  }
+  #menu li>a{
+    background-color: #04AA6D;
+    color: white;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    min-width: 520px;
+    /* font-size: 1.1em; */
+  }
+  #menu li>a:hover{
+    color: #000;
+    /* font-size: 1.2em; */
+    background-color: #eaeaea;
+  }
+  #menu>li{
+    float: left;
+    text-align:center
+  }
+  #menu>li>ul{
+    display: none;
+  }
+  #menu>li:hover>ul {
+    display:block;
+  }
+
+
+
+  .vertical-menu {
+    width: 95%; /* Set a width if you like */
+    
+  }
+  
+  .vertical-menu a {
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    text-align: center;
+    align-self: center;
+    
+  }
+  
+  
+  .vertical-menu a.active {
+    background-color: #69d6ae; /* Add a green color to the "active/current" link */
+    color: black;
+    font-size: 1.50em;
+    text-align: center;
+    align-self: center;
+    border: #000;
+  }

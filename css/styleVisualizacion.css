@@ -1,0 +1,116 @@
+a.ver:link {
+  color: rgb(8, 146, 19);
+}
+
+a.ver {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+
+  background: url("https://mdn.mozillademos.org/files/12982/external-link-52.png")
+    no-repeat 100% 0;
+  background-size: 10px 10px;
+  padding-right: 19px;
+}
+
+
+.modificar {
+  float: right;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #198754;
+  border-color:#13653F;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  font-weight: bold;
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+}
+
+.modificar:hover {
+  color: black;
+  background-color: #ffffff;
+  font-weight: bold;
+
+}
+
+.borrar {
+    float: right;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #198754;
+    border-color:#13653F;
+    color: white;
+    border-width: 3px;
+    border-style: solid;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    top: 45%;
+    left: 80%;
+  }
+  
+  .borrar:hover {
+    color: black;
+    background-color: #ffffff;
+    font-weight: bold;
+  
+  }
+
+  .actualizar {
+    float: right;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #198754;
+    border-color:#13653F;
+    color: white;
+    border-width: 3px;
+    border-style: solid;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+  }
+  
+  .actualizar:hover {
+    color: black;
+    background-color: #ffffff;
+    font-weight: bold;
+  
+  }
+
+
+  input.bloquear{
+    border: 0px;
+    outline: none;
+  }
+
+  input.bloquear{
+    border: 2px;
+    outline: none;
+  }

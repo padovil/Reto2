@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/funcionCliente.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <title>Registro Clientes</title>
+  </head>
+  <body>
+    <!-- <form action="#" onsubmit="insertar()"> -->
+    <form action="javascript:;" onsubmit="insertar()">
+      <div class="registro">
+
+        <br><br>
+
+        <label>ID:</label>
+        <input type="number" class="entradas" id="id" placeholder="id" /><br><br>
+        
+        <label>NAME:</label>
+        <input type="text" class="entradas" id="name" placeholder="name" /><br><br>
+
+        <label>EMAIL:</label>
+        <input type="text" class="entradas" id="email" placeholder="email" /><br><br>
+
+        <label>AGE:</label>
+        <input type="number" class="entradas" id="age" placeholder="age" /><br><br>
+
+        <input type="submit" class="botones" name="REGISTRAR" value="REGISTRAR CLIENTE"/>
+      </div>
+    </form>
+
+    
+  </body>
+</html>
