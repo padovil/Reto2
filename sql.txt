@@ -1,0 +1,106 @@
+---------------------------COSTUME
+
+--------------- GET
+SELECT * FROM disfraz ORDER BY id
+
+--------------- GET:ID
+SELECT * FROM disfraz WHERE id = :id
+
+---------------PUT
+
+BEGIN
+
+UPDATE DISFRAZ
+SET brand=:brand, model=:model, category_id = :category_id, name = :name
+WHERE id=:id;
+:status_code:=201;
+END;
+
+---------------POST
+
+BEGIN 
+
+INSERT INTO disfraz (id,brand,model,category_id,name) VALUES (:id,:brand, :model, :category_id, :name);
+:status_code:=201;
+END;
+
+
+---------------DELETE
+
+BEGIN
+
+DELETE FROM disfraz WHERE id=:id;
+:status_code:=204;
+END;
+
+
+------------------------ MESSAGE
+
+--------------- GET
+SELECT * FROM message ORDER BY id
+
+--------------- GET:ID
+SELECT * from message where id=:id
+
+
+---------------PUT
+BEGIN
+
+UPDATE MESSAGE
+SET messagetext =: messagetext
+WHERE id=:id;
+:status_code:=201;
+END;
+
+---------------POST
+BEGIN
+
+INSERT INTO MESSAGE (id, messagetext) values (:id, :messagetext);
+:status_code:=201;
+END;
+
+
+---------------DELETE
+
+BEGIN
+
+DELETE FROM MESSAGE  WHERE id=:id;
+:status_code:=204;
+END;
+
+
+------------------------ CLIENT
+
+--------------- GET
+select * from client ORDER BY id
+
+--------------- GET:ID
+
+SELECT * FROM CLIENT WHERE id=:id
+
+---------------PUT
+
+BEGIN
+
+UPDATE CLIENT
+SET name=:name, email=:email, age=:age
+WHERE id=:id;
+:status_code:=201;
+END;
+
+---------------POST
+BEGIN
+
+INSERT INTO client (id, name, email,age) values(:id, :name, :email, :age);
+:status_code:=201;
+
+END;
+
+
+---------------DELETE
+
+BEGIN
+
+DELETE FROM CLIENT WHERE id=:id;
+:status_code:=204;
+END;
